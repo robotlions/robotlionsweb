@@ -1,0 +1,80 @@
+
+
+.App {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Gotham-Light';
+}
+
+h5{
+  font-family: 'Gotham';
+}
+.card{
+  position: inherit !important;
+  border: 1px solid black !important;
+}
+
+.card-body{
+  
+}
+
+.card-text{
+  color: black;
+}
+
+.container{
+  margin-bottom: 100px;
+}
+
+.contentRow{
+  min-height: 100px;
+  padding-top: 20px;
+}
+.imageRow{
+  margin-top: 20px;
+}
+
+.image{
+  max-width:100%;
+}
+
+.logoRow{
+  background-color: white;
+  padding-top: 3vh;
+  padding-bottom: 1vh;
+  /* position: sticky; */
+  top: 0;
+}
+
+.textField{
+  text-align: center;
+  margin-top: 10px;
+  animation: slideIn 1.5s;
+  padding-top: 10px;
+}
+
+@keyframes slideIn {
+  from {transform: translateY(100px);}
+  to {transform: translateY(0px);}
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham'), url('../src/fonts/GothamPro-Black.woff') format('woff');
+}
+@font-face {
+font-family: 'GothamLight';
+src: local('GothamLight'), url('../src/fonts/GothamPro-Light.woff') format('woff');
+}
+
+@media (min-width: 500px){
+  .logoRow{
+    padding-top: 7vh;
+    padding-bottom: 10vh;
+  }
+}
