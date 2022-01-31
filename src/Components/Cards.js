@@ -1,14 +1,8 @@
 import pressIcon from "/Users/chadmusick/Code/robotlions/src/images/icon.png";
 import diceLogo from "/Users/chadmusick/Code/robotlions/src/images/dicelogo.png";
-import falls from "/Users/chadmusick/Code/robotlions/src/images/falls.jpg";
-import waterDrop from "/Users/chadmusick/Code/robotlions/src/images/waterDrop.jpg";
-import loopFalls from "/Users/chadmusick/Code/robotlions/src/images/danielLoopFalls.jpg";
-import quarrySteps from "/Users/chadmusick/Code/robotlions/src/images/quarrySteps.jpg";
-import parkwayFalls from "/Users/chadmusick/Code/robotlions/src/images/parkwayFalls.jpg";
-import splashBW from "/Users/chadmusick/Code/robotlions/src/images/splashBW.jpg";
-import wineSplash from "/Users/chadmusick/Code/robotlions/src/images/wineSplash.jpg";
-import waterRefraction from "/Users/chadmusick/Code/robotlions/src/images/waterRefraction.jpg";
-
+import frontScreen from '/Users/chadmusick/Code/robotlions/src/images/blankPageScreen.png';
+import mainScreen from "/Users/chadmusick/Code/robotlions/src/images/mainPageScreen.png";
+import editScreen from "/Users/chadmusick/Code/robotlions/src/images/editRecipeScreen.png";
 
 
 
@@ -31,6 +25,73 @@ export const atomicPressCard =
                 
                 </div>
                 </div>
+
+
+
+export const atomicPressDataCards=<div className="row">
+  <div className="col-lg-6">
+<div className="card">
+  <div className="row">
+  <div className="col-7">
+  <img src={frontScreen} className="card-img-top" style={{border: "1px solid"}} alt="app front screen"/>
+  </div>
+  <div className="col-5">
+  <div className="card-body">
+    <h5 className="card-title">Styling</h5>
+    <p className="card-text">A clean, simple UI inspired by 1950s atomic design.</p>
+  </div>
+  </div>
+  </div>
+  </div>
+  <p>{"\n"}</p>
+</div>
+
+
+<div className="col-lg-6">
+<div className="card">
+  <div className="row">
+  <div className="col-7">
+  <img src={mainScreen} className="card-img-top" style={{border: "1px solid"}} alt="list of recipes"/>
+  </div>
+  <div className="col-5">
+  <div className="card-body">
+    <h5 className="card-title">Browse</h5>
+    <p className="card-text">Scroll through a list of saved, editable recipes.</p>
+  </div>
+  </div>
+  </div>
+  </div>
+  <p>{"\n"}</p>
+</div>
+
+<div className="col-lg-6">
+<div className="card">
+  <div className="row">
+  <div className="col-7">
+  <img src={editScreen} className="card-img-top" style={{border: "1px solid"}} alt="editing screen"/>
+  </div>
+  <div className="col-5">
+  <div className="card-body">
+    <h5 className="card-title">Create, Edit and Store Locally</h5>
+    <p className="card-text">Users randomly generate coffee recipes then save locally. No internet connection needed.</p>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 export const rpgCard =
 
@@ -63,59 +124,8 @@ export const storyDiceCard =
                 </div>
 
 
-// export const fallsCard =
-
-// <div className="card">
-//     <div className="row g-0">
-//         <div className="col-lg-4">
-//                 <img className="img-fluid" src={falls} alt="jones gap bridge"/></div>
-//                 <div className="card-body col-md-8">
-//                   <h5 className="card-title">Jones Gap</h5>
-//                   <p className="card-text">Long exposure on film.<br/>Mamiya RB67 and Ilford HP5</p>
-//                 </div>
-                
-//                 </div>
-//                 </div>
-
-
-// export const waterDropCard =
-
-// <div className="card">
-//     <div className="row g-0">
-//         <div className="col-lg-4">
-//                 <img className="img-fluid" src={waterDrop} alt="single drop of water"/></div>
-//                 <div className="card-body col-md-8">
-//                   <h5 className="card-title">Reflection in water droplet</h5>
-//                   <p className="card-text">Digital<br/>Sony A7 with manual macro lens</p>
-//                 </div>
-                
-//                 </div>
-//                 </div>
-
-export const fallsCard = 
-
-  <img className="photoImg" src={falls} />
   
 
 
 
-  export const waterDropCard =
-  <img className="photoImg" src={waterDrop} alt="image reflected in drop of water"/>
-
-  export const loopFallsCard =
-  <img className="photoImg" src={loopFalls} alt="Daniel Loop waterfall"/>
-
-  export const quarryStepsCard =
-  <img className="photoImg" src={quarrySteps} alt="Stone steps"/>
-
-  export const parkwayFallsCard =
-  <img className="photoImg" src={parkwayFalls} alt="waterfall behind trees"/>
-
-  export const splashBWCard =
-  <img className="photoImg" src={splashBW} alt="single splashing drop of water"/>
-
-  export const wineSplashCard =
-  <img className="photoImg" src={wineSplash} alt="red wine splashing into glass"/>
-
-  export const waterRefractionCard = 
-  <img className="photoImg" src={waterRefraction} alt="bright colors refracted through water"/>
+  

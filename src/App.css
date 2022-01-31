@@ -53,6 +53,7 @@ h5{
 .card{
   position: inherit !important;
   border: 1px solid black !important;
+  animation: fadeIn 2s;
 }
 
 
@@ -112,7 +113,6 @@ h5{
 .textField{
   text-align: center;
   margin-top: 10px;
-  animation: slideIn 1.5s;
   padding-top: 10px;
 }
 
@@ -145,5 +145,9 @@ src: local('GothamLight'), url('../src/fonts/GothamPro-Light.woff') format('woff
 @media (max-width: 760px){
   .photoText{min-height: 350px;padding-top:175px;}
   .brandRow{padding-right: 40px;}
+  #standardLogo{display: none;}
   
+}
+@media (min-width: 761px){
+  #mobileLogo{display: none;}
 }

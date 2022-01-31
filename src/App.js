@@ -7,7 +7,8 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeOpenText} from '@fortawesome/free-solid-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
-import logoBarColor from '../src/images/banner1800x300.png';
+import logoBarColor from '../src/images/banner1800x300.jpg';
+import bannerMobile from '../src/images/bannerMobile.png';
 import dice1 from '../src/images/slice1c2.jpg';
 import dice2 from '../src/images/slice2c2.jpg';
 import dice3 from '../src/images/slice3c2.jpg';
@@ -27,7 +28,7 @@ import waterRefraction from "../src/images/waterRefraction.jpg";
 
 
 
-import { atomicPressCard, storyDiceCard} from "./Components/Cards";
+import { atomicPressCard, storyDiceCard, atomicPressDataCards} from "./Components/Cards";
 
 
 
@@ -49,6 +50,7 @@ function App() {
   const [splashBWTextVisible, setSplashBWTextVisible] = useState(false);
   const [wineSplashTextVisible, setWineSplashTextVisible] = useState(false);
   const [waterRefractionTextVisible, setWaterRefractionTextVisible] = useState(false);
+  const [atomicDataCardsVisible, setAtomicDataCardsVisible] = useState(false);
 
   const fallsCard = <button className="buttonBox" onClick={()=>setFallsTextVisible(!fallsTextVisible)}>
   {!fallsTextVisible ? <img className="photoImg" alt="water and rocks" src={falls} /> : <p className="photoText">Long exposure on film.</p>}
@@ -85,12 +87,13 @@ function App() {
     <div className="container g-4">
       
       <div className="row logoRow">
-        <img src={logoBarColor} alt="robot lions"></img></div>
+        <img id="standardLogo" src={logoBarColor} alt="robot lions"></img>
+        <img id="mobileLogo" src={bannerMobile} alt="robot lions"></img></div>
       
       <div className="row">
       <AnimatePresence>
         <motion.div
-          key="question"
+          key="appTitleCard"
           onClick={() => setIsOpen1(!isOpen1)}
         >
           <motion.div className='imageRow'>
@@ -100,7 +103,7 @@ function App() {
 
         {isOpen1 && (
           <motion.div
-            key="answer"
+            key="appContentCard"
             initial="collapsed"
             animate="open"
             exit="collapsed"
@@ -111,7 +114,10 @@ function App() {
             transition={{ duration: 1.2, ease: [0.04, 0.62, 0.23, 0.98] }}
           >
             <div className="row contentRow justify-content-center">
-            <div className="textField col-md-8">{atomicPressCard}
+            <div className="textField col-md-8">
+              <button onClick={()=>setAtomicDataCardsVisible(!atomicDataCardsVisible)}>{!atomicDataCardsVisible ? atomicPressCard : atomicPressDataCards}</button>
+              
+              
             </div>
             </div>
           </motion.div>
@@ -120,7 +126,7 @@ function App() {
       </AnimatePresence>
       <AnimatePresence>
         <motion.div
-          key="question"
+          key="websiteTitleRow"
           onClick={() => setIsOpen2(!isOpen2)}
         >
           <motion.div className='imageRow'>
@@ -130,7 +136,7 @@ function App() {
 
         {isOpen2 && (
           <motion.div
-            key="answer"
+            key="websiteContentRow"
             initial="collapsed"
             animate="open"
             exit="collapsed"
@@ -138,7 +144,8 @@ function App() {
               open: { opacity: 1, height: "auto" },
               collapsed: { opacity: 0, height: 0 }
             }}
-            transition={{ duration: 1.2, ease: [0.04, 0.62, 0.23, 0.98] }}
+            // transition={{ duration: 1.2, ease: [0.04, 0.62, 0.23, 0.98] }}
+            transition={{ duration: 1.2, ease: "linear" }}
           >
             <div className="row contentRow justify-content-center">
             <p className="textField col-md-8">{storyDiceCard}</p>
@@ -149,7 +156,7 @@ function App() {
       </AnimatePresence>
       <AnimatePresence>
         <motion.div
-          key="question"
+          key="photoTitleRow"
           onClick={() => setIsOpen3(!isOpen3)}
         >
           <motion.div className='imageRow'>
@@ -159,7 +166,7 @@ function App() {
 
         {isOpen3 && (
           <motion.div
-            key="answer"
+            key="photoContentRow"
             initial="collapsed"
             animate="open"
             exit="collapsed"
@@ -167,7 +174,8 @@ function App() {
               open: { opacity: 1, height: "auto" },
               collapsed: { opacity: 0, height: 0 }
             }}
-            transition={{ duration: 1.2, ease: [0.04, 0.62, 0.23, 0.98] }}
+            // transition={{ duration: 1.2, ease: [0.04, 0.62, 0.23, 0.98] }}
+            transition={{ duration: 1.2, ease: "linear" }}
           >
             <div className="row photosRow contentRow justify-content-center">
             <p className="col-md-3">{fallsCard}</p>
