@@ -37,6 +37,7 @@ p {
 
 h5{
   font-family: 'Gotham';
+  font-size: large;
 }
 
 .App {
@@ -60,6 +61,7 @@ h5{
 .card-text{
   color: black;
 }
+
 
 .container{
   margin-bottom: 100px;
@@ -143,7 +145,7 @@ src: local('GothamLight'), url('../src/fonts/GothamPro-Light.woff') format('woff
 }
 
 @media (max-width: 760px){
-  .photoText{min-height: 350px;padding-top:175px;}
+  .photoText{min-height: 330px;padding-top:175px;}
   .brandRow{padding-right: 40px;}
   #standardLogo{display: none;}
   
