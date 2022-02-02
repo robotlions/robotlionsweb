@@ -45,8 +45,9 @@ export const atomicPressDataCards=<div className="row">
   </div>
   </div>
   </div>
+  <p>{"\n"}</p>
 </div>
-  
+
   
   
   
