@@ -1,9 +1,9 @@
-import pressIcon from "/Users/chadmusick/Code/robotlions/src/images/icon.png";
-import diceLogo from "/Users/chadmusick/Code/robotlions/src/images/dicelogo.png";
-import frontScreen from '/Users/chadmusick/Code/robotlions/src/images/blankPageScreen.png';
-import mainScreen from "/Users/chadmusick/Code/robotlions/src/images/mainPageScreen.png";
-import editScreen from "/Users/chadmusick/Code/robotlions/src/images/editRecipeScreen.png";
-import splashScreen from "/Users/chadmusick/Code/robotlions/src/images/atomicSplash2.jpg";
+import pressIcon from "../images/icon.png";
+import diceLogo from "../images/dicelogo.png";
+import frontScreen from '../images/blankPageScreen.png';
+import mainScreen from "../images/mainPageScreen.png";
+import editScreen from "../images/editRecipeScreen.png";
+import splashScreen from "../images/atomicSplash2.jpg";
 
 
 

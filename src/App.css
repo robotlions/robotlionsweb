@@ -32,7 +32,7 @@ button {
 }
 
 p {
-  font-family: 'Gotham-Light';
+  font-family: 'GothamLight';
 }
 
 h5{
@@ -136,6 +136,16 @@ h5{
 font-family: 'GothamLight';
 src: local('GothamLight'), url('../src/fonts/GothamPro-Light.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Raleway-Black';
+  src: local('Raleway-Black'), url('../src/fonts/Raleway-Black.ttf') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Raleway-Medium';
+    src: local('Raleway-Medium'), url('../src/fonts/Raleway-Medium.ttf') format('woff');
+    }
 
 @media (min-width: 500px){
   .logoRow{
