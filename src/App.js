@@ -4,7 +4,6 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelopeOpenText} from '@fortawesome/free-solid-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 import logoBarColor from '../src/images/banner1800x300.jpg';
@@ -78,7 +77,6 @@ function App() {
   </button>
   
   const githubIcon = <FontAwesomeIcon icon={faGithub}/>
-  const envelopeIcon = <FontAwesomeIcon icon={faEnvelopeOpenText}/>
   const planeIcon = <FontAwesomeIcon icon={faPaperPlane}/>
   
 
