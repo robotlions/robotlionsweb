@@ -23,7 +23,7 @@ import parkwayFalls from "../src/images/parkwayFalls.jpg";
 import splashBW from "../src/images/splashBW.jpg";
 import wineSplash from "../src/images/wineSplash.jpg";
 import waterRefraction from "../src/images/waterRefraction.jpg";
-
+import folly from "../src/images/folly.jpg"
 
 
 
@@ -72,8 +72,8 @@ function App() {
   const wineSplashCard = <button className="buttonBox" onClick={()=>setWineSplashTextVisible(!wineSplashTextVisible)}>
   {!wineSplashTextVisible ? <img className="photoImg" alt="red wine splashing into glass" src={wineSplash} /> : <p className="photoText">From a previous life as a wine professional.</p>}
   </button>
-  const waterRefractionCard = <button className="buttonBox" onClick={()=>setWaterRefractionTextVisible(!waterRefractionTextVisible)}>
-  {!waterRefractionTextVisible ? <img className="photoImg" alt="color background refracting through water drops" src={waterRefraction} /> : <p className="photoText">Goofing around with water and construction paper.</p>}
+  const follyCard = <button className="buttonBox" onClick={()=>setWaterRefractionTextVisible(!waterRefractionTextVisible)}>
+  {!waterRefractionTextVisible ? <img className="photoImg" alt="ocean and stars at night" src={folly} /> : <p className="photoText">Long exposure at night.</p>}
   </button>
   
   const githubIcon = <FontAwesomeIcon icon={faGithub}/>
@@ -183,7 +183,8 @@ function App() {
             <p className="col-md-3">{parkwayFallsCard}</p>
             <p className="col-md-3">{splashBWCard}</p>
             <p className="col-md-3">{wineSplashCard}</p>
-            <p className="col-md-3">{waterRefractionCard}</p>
+            <p className="col-md-3">{follyCard}</p>
+            <a style={{textAlign:"center"}} href="https://flickr.com/photos/183126740@N02/">Portfolio on Flickr</a>
 
             </div>
           </motion.div>
@@ -214,7 +215,10 @@ function App() {
           >
             <div className="row contentRow justify-content-center">
               <div className="textField col-md-8">
-            <p>Electronic Communication<br/> info --atsymbol-- robotlions.com</p><p>github<br/>/robotlions</p><p>Social<br/>hah hah no</p>
+            <p>Electronic Communication<br/> info --atsymbol-- robotlions.com</p>
+            <p>github<br/>/robotlions</p>
+            <p>Social<br/><a href="https://flickr.com/photos/183126740@N02/">flickr</a><br/>
+            <a href="https://twitter.com/LionsRobot">twitter</a></p>
             </div></div>
           </motion.div>
         )}
