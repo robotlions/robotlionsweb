@@ -21,7 +21,7 @@ export const atomicPressCard =
                 <img className="img-fluid" src={pressIcon} alt="app indicator"/></div>
                 <div className="card-body d-flex flex-column col-md-8 align-self-center">
                   <h5 className="card-title">Atomic Press</h5>
-                  <p className="card-text">React Native app for randomly generating - then editing and saving - recipes for the AeroPress coffee brewer. <br/>Inspired by 1950s atomic design.</p>
+                  <p className="card-text">React Native app for randomly generating - then editing and saving - recipes for the AeroPress coffee brewer. <br/>Inspired by 1950s atomic design.<br/>See the app on the <a style={{color:"#99CBA6"}}href="https://play.google.com/store/apps/details?id=com.robotlions.atomicpress">Google Play Store</a></p>
                 </div>
                 
                 </div>

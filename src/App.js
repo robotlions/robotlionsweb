@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 import logoBarColor from '../src/images/banner1800x300.jpg';
 import bannerMobile from '../src/images/bannerMobile.png';
@@ -12,6 +13,10 @@ import dice1 from '../src/images/slice1c2.jpg';
 import dice2 from '../src/images/slice2c2.jpg';
 import dice3 from '../src/images/slice3c2.jpg';
 import dice4 from '../src/images/slice4c2.jpg';
+import mobileSlice1 from '../src/images/mobileSlice1.png';
+import mobileSlice2 from '../src/images/mobileSlice2.png';
+import mobileSlice3 from '../src/images/mobileSlice3.png';
+import mobileSlice4 from '../src/images/mobileSlice4.png';
 
 
 
@@ -78,6 +83,7 @@ function App() {
   
   const githubIcon = <FontAwesomeIcon icon={faGithub}/>
   const planeIcon = <FontAwesomeIcon icon={faPaperPlane}/>
+  const twitterIcon = <FontAwesomeIcon icon={faTwitter}/>
   
 
   return (
@@ -95,7 +101,8 @@ function App() {
           onClick={() => setIsOpen1(!isOpen1)}
         >
           <motion.div className='imageRow'>
-            <img className="image" src={dice1} alt="apps button"></img>
+            <img className="fullImage" src={dice1} alt="apps button"></img>
+            <img className="mobileImage" src={mobileSlice1} alt="apps button mobile"></img>
           </motion.div>
         </motion.div>
 
@@ -128,7 +135,8 @@ function App() {
           onClick={() => setIsOpen2(!isOpen2)}
         >
           <motion.div className='imageRow'>
-            <img className="image" src={dice2} alt="websites button"></img>
+            <img className="fullImage" src={dice2} alt="websites button"></img>
+            <img className="mobileImage" src={mobileSlice2} alt="websites button mobile"></img>
           </motion.div>
         </motion.div>
 
@@ -158,7 +166,8 @@ function App() {
           onClick={() => setIsOpen3(!isOpen3)}
         >
           <motion.div className='imageRow'>
-            <img className="image" src={dice3} alt="photography button"></img>
+            <img className="fullImage" src={dice3} alt="photography button"></img>
+            <img className="mobileImage" src={mobileSlice3} alt="photo button mobile"></img>
           </motion.div>
         </motion.div>
 
@@ -197,7 +206,8 @@ function App() {
           onClick={() => setIsOpen4(!isOpen4)}
         >
           <motion.div className='imageRow'>
-            <img className="image" src={dice4} alt="about button"></img>
+            <img className="fullImage" src={dice4} alt="about button"></img>
+            <img className="mobileImage" src={mobileSlice4} alt="about button mobile"></img>
           </motion.div>
         </motion.div>
 
@@ -216,9 +226,9 @@ function App() {
             <div className="row contentRow justify-content-center">
               <div className="textField col-md-8">
             <p>Electronic Communication<br/> info --atsymbol-- robotlions.com</p>
-            <p>github<br/>/robotlions</p>
-            <p>Social<br/><a href="https://flickr.com/photos/183126740@N02/">flickr</a><br/>
-            <a href="https://twitter.com/LionsRobot">twitter</a></p>
+            <a style={{color:"black",fontWeight:"bold"}} href="http://www.github.com/robotlions">Github</a>
+            <br/><a style={{color:"black",fontWeight:"bold"}} href="https://flickr.com/photos/183126740@N02/">Flickr</a><br/>
+            <a style={{color:"black",fontWeight:"bold"}} href="https://twitter.com/LionsRobot">Twitter</a>
             </div></div>
           </motion.div>
         )}
@@ -231,7 +241,9 @@ function App() {
         <p className="linkLogos">
         <a id="gitLogo" href="https://github.com/robotlions">{githubIcon}</a>
         {"\n"}
-        <a id="mailLogo" href="mailto:info@robotlions.com">{planeIcon}</a></p></div>
+        <a id="mailLogo" href="mailto:info@robotlions.com">{planeIcon}</a>
+        {"\n"}
+        <a id="twitterLogo" href="https://www.twitter.com/lionsrobot">{twitterIcon}</a></p></div>
     </div>
     </motion.div>
   );

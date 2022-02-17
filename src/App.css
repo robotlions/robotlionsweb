@@ -70,6 +70,10 @@ h5{
 .contentRow{
   padding-top: 20px;
 }
+
+.fullImage{
+  max-width:100%;
+}
 .imageRow{
   margin-top: 20px;
 }
@@ -91,11 +95,18 @@ h5{
   color: black;
 }
 
+#twitterLogo:hover{
+  color:black;
+}
 
 .logoRow{
   background-color: white;
   padding-top: 3vh;
   padding-bottom: 1vh;
+}
+
+.mobileImage{
+  width:100%;
 }
 
 .photoImg{
@@ -158,8 +169,10 @@ src: local('GothamLight'), url('../src/fonts/GothamPro-Light.woff') format('woff
   .photoText{min-height: 330px;padding-top:175px;}
   .brandRow{padding-right: 40px;}
   #standardLogo{display: none;}
+  .fullImage{display: none;}
   
 }
 @media (min-width: 761px){
   #mobileLogo{display: none;}
+  .mobileImage{display: none;}
 }
