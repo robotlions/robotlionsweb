@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFlickr } from '@fortawesome/free-brands-svg-icons';
 
 import logoBarColor from '../src/images/banner1800x300.jpg';
 import bannerMobile from '../src/images/bannerMobile.png';
@@ -84,7 +85,7 @@ function App() {
   const githubIcon = <FontAwesomeIcon icon={faGithub}/>
   const planeIcon = <FontAwesomeIcon icon={faPaperPlane}/>
   const twitterIcon = <FontAwesomeIcon icon={faTwitter}/>
-  
+  const flickrIcon = <FontAwesomeIcon icon={faFlickr}/>
 
   return (
     <motion.div>
@@ -243,7 +244,9 @@ function App() {
         {"\n"}
         <a id="mailLogo" href="mailto:info@robotlions.com">{planeIcon}</a>
         {"\n"}
-        <a id="twitterLogo" href="https://www.twitter.com/lionsrobot">{twitterIcon}</a></p></div>
+        <a id="twitterLogo" href="https://www.twitter.com/lionsrobot">{twitterIcon}</a>
+        {"\n"}
+        <a id="flickrLogo" href="https://flickr.com/photos/183126740@N02/">{flickrIcon}</a></p></div>
     </div>
     </motion.div>
   );
