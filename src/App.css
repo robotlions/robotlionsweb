@@ -54,7 +54,7 @@ h5{
 .card{
   position: inherit !important;
   border: 1px solid black !important;
-  animation: fadeIn 2s;
+  /* animation: fadeIn 2s; */
 }
 
 
@@ -69,6 +69,7 @@ h5{
 
 .contentRow{
   padding-top: 20px;
+  min-height: 350px;
 }
 
 .fullImage{
@@ -121,6 +122,7 @@ h5{
 
 .photosRow{
   margin-bottom: 50px;
+  min-height: 500px;
 }
 
 .textField{
@@ -134,10 +136,10 @@ h5{
   to {opacity: 1};
 }
 
-@keyframes slideIn {
+/* @keyframes slideIn {
   from {transform: translateY(100px);}
   to {transform: translateY(0px);}
-}
+} */
 
 @font-face {
   font-family: 'Gotham';

@@ -21,6 +21,7 @@ import mobileSlice4 from '../src/images/mobileSlice4.png';
 
 
 
+
 import falls from "../src/images/falls.jpg";
 import waterDrop from "../src/images/waterDrop.jpg";
 import loopFalls from "../src/images/danielLoopFalls.jpg";
@@ -28,7 +29,6 @@ import quarrySteps from "../src/images/quarrySteps.jpg";
 import parkwayFalls from "../src/images/parkwayFalls.jpg";
 import splashBW from "../src/images/splashBW.jpg";
 import wineSplash from "../src/images/wineSplash.jpg";
-import waterRefraction from "../src/images/waterRefraction.jpg";
 import folly from "../src/images/folly.jpg"
 
 
@@ -37,10 +37,8 @@ import { atomicPressCard, storyDiceCard, atomicPressDataCards} from "./Component
 
 
 
-
 function App() {
 
-  
 
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
@@ -87,26 +85,26 @@ function App() {
   const twitterIcon = <FontAwesomeIcon icon={faTwitter}/>
   const flickrIcon = <FontAwesomeIcon icon={faFlickr}/>
 
+
   return (
-    <motion.div>
+    
     <div className="container g-4">
       
       <div className="row logoRow">
         <img id="standardLogo" src={logoBarColor} alt="robot lions"></img>
         <img id="mobileLogo" src={bannerMobile} alt="robot lions"></img></div>
       
-      <div className="row">
-      <AnimatePresence>
-        <motion.div
-          key="appTitleCard"
+      
+      
+        <div
           onClick={() => setIsOpen1(!isOpen1)}
         >
-          <motion.div className='imageRow'>
+          <div className='imageRow'>
             <img className="fullImage" src={dice1} alt="apps button"></img>
             <img className="mobileImage" src={mobileSlice1} alt="apps button mobile"></img>
-          </motion.div>
-        </motion.div>
-
+          </div>
+        </div>
+        <AnimatePresence>
         {isOpen1 && (
           <motion.div
             key="appContentCard"
@@ -114,11 +112,13 @@ function App() {
             animate="open"
             exit="collapsed"
             variants={{
-              open: { opacity: 1, height: "auto" },
-              collapsed: { opacity: 0, height: 0 },
+              open: { height: "auto", opacity: 1},
+              collapsed: { height: 0, opacity: 0 },
             }}
-            transition={{ duration: 1.2, ease: [0.04, 0.62, 0.23, 0.98] }}
+            // transition={{ duration: .8, type: "tween", ease: "linear"}}
+            transition={{ duration: 1.2, type: "spring", ease: [0.04, 0.62, 0.23, 0.98] }}
           >
+            
             <div className="row contentRow justify-content-center">
             <div className="textField col-md-8">
               <button onClick={()=>setAtomicDataCardsVisible(!atomicDataCardsVisible)}>{!atomicDataCardsVisible ? atomicPressCard : atomicPressDataCards}</button>
@@ -128,19 +128,20 @@ function App() {
             </div>
           </motion.div>
         )}
-        
+      
       </AnimatePresence>
-      <AnimatePresence>
-        <motion.div
+      
+      <div className="row">
+        <div
           key="websiteTitleRow"
           onClick={() => setIsOpen2(!isOpen2)}
         >
-          <motion.div className='imageRow'>
+          <div className='imageRow'>
             <img className="fullImage" src={dice2} alt="websites button"></img>
             <img className="mobileImage" src={mobileSlice2} alt="websites button mobile"></img>
-          </motion.div>
-        </motion.div>
-
+          </div>
+        </div>
+        <AnimatePresence>
         {isOpen2 && (
           <motion.div
             key="websiteContentRow"
@@ -151,8 +152,8 @@ function App() {
               open: { opacity: 1, height: "auto" },
               collapsed: { opacity: 0, height: 0 }
             }}
-            // transition={{ duration: 1.2, ease: [0.04, 0.62, 0.23, 0.98] }}
-            transition={{ duration: 1.2, ease: "linear" }}
+            transition={{ duration: 1.2, type: "spring", ease: [0.04, 0.62, 0.23, 0.98] }}
+            
           >
             <div className="row contentRow justify-content-center">
             <p className="textField col-md-8">{storyDiceCard}</p>
@@ -161,17 +162,19 @@ function App() {
         )}
         
       </AnimatePresence>
-      <AnimatePresence>
-        <motion.div
+      </div>
+
+
+        <div
           key="photoTitleRow"
           onClick={() => setIsOpen3(!isOpen3)}
         >
-          <motion.div className='imageRow'>
+          <div className='imageRow'>
             <img className="fullImage" src={dice3} alt="photography button"></img>
             <img className="mobileImage" src={mobileSlice3} alt="photo button mobile"></img>
-          </motion.div>
-        </motion.div>
-
+          </div>
+        </div>
+        <AnimatePresence>
         {isOpen3 && (
           <motion.div
             key="photoContentRow"
@@ -182,8 +185,8 @@ function App() {
               open: { opacity: 1, height: "auto" },
               collapsed: { opacity: 0, height: 0 }
             }}
-            // transition={{ duration: 1.2, ease: [0.04, 0.62, 0.23, 0.98] }}
-            transition={{ duration: 1.2, ease: "linear" }}
+            transition={{ duration: 1.2, type: "spring", ease: [0.04, 0.62, 0.23, 0.98] }}
+           
           >
             <div className="row photosRow contentRow justify-content-center">
             <p className="col-md-3">{fallsCard}</p>
@@ -201,17 +204,16 @@ function App() {
         )}
         
       </AnimatePresence>
-      <AnimatePresence>
-        <motion.div
-          key="question"
+      
+        <div
           onClick={() => setIsOpen4(!isOpen4)}
         >
-          <motion.div className='imageRow'>
+          <div className='imageRow'>
             <img className="fullImage" src={dice4} alt="about button"></img>
             <img className="mobileImage" src={mobileSlice4} alt="about button mobile"></img>
-          </motion.div>
-        </motion.div>
-
+          </ div>
+        </div>
+        <AnimatePresence>
         {isOpen4 && (
           <motion.div
             key="answer"
@@ -222,7 +224,7 @@ function App() {
               open: { opacity: 1, height: "auto" },
               collapsed: { opacity: 0, height: 0 }
             }}
-            transition={{ duration: 1.2, ease: [0.04, 0.62, 0.23, 0.98] }}
+            transition={{ duration: 1.2, type: "spring", ease: [0.04, 0.62, 0.23, 0.98] }}
           >
             <div className="row contentRow justify-content-center">
               <div className="textField col-md-8">
@@ -231,13 +233,13 @@ function App() {
             <br/><a style={{color:"black",fontWeight:"bold"}} href="https://flickr.com/photos/183126740@N02/">Flickr</a><br/>
             <a style={{color:"black",fontWeight:"bold"}} href="https://twitter.com/LionsRobot">Twitter</a>
             </div></div>
-          </motion.div>
+          // </motion.div>
         )}
         
       </AnimatePresence>
       
       
-      </div>
+      
       <div className="row brandRow text-end fixed-bottom">
         <p className="linkLogos">
         <a id="gitLogo" href="https://github.com/robotlions">{githubIcon}</a>
@@ -248,7 +250,7 @@ function App() {
         {"\n"}
         <a id="flickrLogo" href="https://flickr.com/photos/183126740@N02/">{flickrIcon}</a></p></div>
     </div>
-    </motion.div>
+    
   );
 }
 
