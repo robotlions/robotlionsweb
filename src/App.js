@@ -233,7 +233,7 @@ function App() {
             <br/><a style={{color:"black",fontWeight:"bold"}} href="https://flickr.com/photos/183126740@N02/">Flickr</a><br/>
             <a style={{color:"black",fontWeight:"bold"}} href="https://twitter.com/LionsRobot">Twitter</a>
             </div></div>
-          // </motion.div>
+          </motion.div>
         )}
         
       </AnimatePresence>
