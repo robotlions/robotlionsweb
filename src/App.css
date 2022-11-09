@@ -14,13 +14,12 @@ a:visited{
   color: rgb(223, 227, 228);
 }
 
-/* a:hover{
-  color: black;
-} */
 
-/* a:active{
-  color: black;
-} */
+
+.accordion-button{
+  padding: 0 !important;
+  padding-right: 1.25rem !important;
+}
 
 button {
   background-color: white;
@@ -101,12 +100,17 @@ h5{
 }
 
 .logoRow{
-  padding-top: 1vh;
+  padding-top: 5vh;
   background-color: white;
+  padding-bottom: 2vh;
 }
 
 .mobileImage{
   width:100%;
+}
+
+.photoPanel{
+  margin-bottom: 1rem;
 }
 
 .photoImg{
@@ -164,6 +168,7 @@ src: local('GothamLight'), url('../src/fonts/GothamPro-Light.woff') format('woff
     padding-top: 0;
     padding-bottom: 2vh;
   }
+
 }
 
 @media (max-width: 760px){
@@ -171,6 +176,8 @@ src: local('GothamLight'), url('../src/fonts/GothamPro-Light.woff') format('woff
   .brandRow{padding-right: 40px;}
   #standardLogo{display: none;}
   .fullImage{display: none;}
+  .accordion-button::after{display: none;}
+  .accordion-button{padding-right: 0 !important};
   
 }
 @media (min-width: 761px){
