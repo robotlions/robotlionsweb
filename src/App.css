@@ -19,7 +19,10 @@ a:visited{
 .accordion-button{
   padding: 0 !important;
   padding-right: 1.25rem !important;
+  box-shadow: none !important;
+  background-color: white !important;
 }
+
 
 button {
   background-color: white;

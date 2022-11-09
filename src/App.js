@@ -19,14 +19,8 @@ import mobileSlice2 from "../src/images/mobileSlice2.png";
 import mobileSlice3 from "../src/images/mobileSlice3.png";
 import mobileSlice4 from "../src/images/mobileSlice4.png";
 
-import falls from "../src/images/falls.jpg";
-import waterDrop from "../src/images/waterDrop.jpg";
-import loopFalls from "../src/images/danielLoopFalls.jpg";
-import quarrySteps from "../src/images/quarrySteps.jpg";
-import parkwayFalls from "../src/images/parkwayFalls.jpg";
-import splashBW from "../src/images/splashBW.jpg";
-import wineSplash from "../src/images/wineSplash.jpg";
-import folly from "../src/images/folly.jpg";
+
+import { PhotoGallery } from "./Components/PhotoCards";
 
 import {
   atomicPressCard,
@@ -36,143 +30,10 @@ import {
 
 function App() {
 
-  const [fallsTextVisible, setFallsTextVisible] = useState(false);
-  const [waterDropTextVisible, setWaterDropTextVisible] = useState(false);
-  const [loopFallsTextVisible, setLoopFallsTextVisible] = useState(false);
-  const [quarryStepsTextVisible, setQuarryStepsTextVisible] = useState(false);
-  const [parkwayFallsTextVisible, setParkwayFallsTextVisible] = useState(false);
-  const [splashBWTextVisible, setSplashBWTextVisible] = useState(false);
-  const [wineSplashTextVisible, setWineSplashTextVisible] = useState(false);
-  const [waterRefractionTextVisible, setWaterRefractionTextVisible] = useState(
-    false
-  );
+  
   const [atomicDataCardsVisible, setAtomicDataCardsVisible] = useState(false);
 
-  const fallsCard = (
-    <button
-      className="buttonBox"
-      onClick={() => setFallsTextVisible(!fallsTextVisible)}
-    >
-      {!fallsTextVisible ? (
-        <img className="photoImg" alt="water and rocks" src={falls} />
-      ) : (
-        <p className="photoText">Long exposure on film.</p>
-      )}
-    </button>
-  );
-  const waterDropCard = (
-    <button
-      className="buttonBox"
-      onClick={() => setWaterDropTextVisible(!waterDropTextVisible)}
-    >
-      {!waterDropTextVisible ? (
-        <img
-          className="photoImg"
-          alt="reflection in drop of water"
-          src={waterDrop}
-        />
-      ) : (
-        <p className="photoText">Digital photo with vintage macro lens.</p>
-      )}
-    </button>
-  );
-  const loopFallsCard = (
-    <button
-      className="buttonBox"
-      onClick={() => setLoopFallsTextVisible(!loopFallsTextVisible)}
-    >
-      {!loopFallsTextVisible ? (
-        <img
-          className="photoImg"
-          alt="waterfall at daniel loop trail"
-          src={loopFalls}
-        />
-      ) : (
-        <p className="photoText">
-          Daniel Loop Falls in Pisgah National Forest.
-        </p>
-      )}
-    </button>
-  );
-  const quarryStepsCard = (
-    <button
-      className="buttonBox"
-      onClick={() => setQuarryStepsTextVisible(!quarryStepsTextVisible)}
-    >
-      {!quarryStepsTextVisible ? (
-        <img className="photoImg" alt="stone staircase" src={quarrySteps} />
-      ) : (
-        <p className="photoText">Stone steps in an old rock quarry.</p>
-      )}
-    </button>
-  );
-  const parkwayFallsCard = (
-    <button
-      className="buttonBox"
-      onClick={() => setParkwayFallsTextVisible(!parkwayFallsTextVisible)}
-    >
-      {!parkwayFallsTextVisible ? (
-        <img
-          className="photoImg"
-          alt="waterfall behind trees"
-          src={parkwayFalls}
-        />
-      ) : (
-        <p className="photoText">
-          Waterfall in North Carolina off the Blue Ridge Parkway.
-        </p>
-      )}
-    </button>
-  );
-  const splashBWCard = (
-    <button
-      className="buttonBox"
-      onClick={() => setSplashBWTextVisible(!splashBWTextVisible)}
-    >
-      {!splashBWTextVisible ? (
-        <img
-          className="photoImg"
-          alt="single drop of water splashing in dark pool"
-          src={splashBW}
-        />
-      ) : (
-        <p className="photoText">
-          If I were Richard Dreyfuss' character from Close Encounters, water
-          drop photography would be my mountain of mashed potatoes.
-        </p>
-      )}
-    </button>
-  );
-  const wineSplashCard = (
-    <button
-      className="buttonBox"
-      onClick={() => setWineSplashTextVisible(!wineSplashTextVisible)}
-    >
-      {!wineSplashTextVisible ? (
-        <img
-          className="photoImg"
-          alt="red wine splashing into glass"
-          src={wineSplash}
-        />
-      ) : (
-        <p className="photoText">
-          From a previous life as a wine professional.
-        </p>
-      )}
-    </button>
-  );
-  const follyCard = (
-    <button
-      className="buttonBox"
-      onClick={() => setWaterRefractionTextVisible(!waterRefractionTextVisible)}
-    >
-      {!waterRefractionTextVisible ? (
-        <img className="photoImg" alt="ocean and stars at night" src={folly} />
-      ) : (
-        <p className="photoText">Long exposure at night.</p>
-      )}
-    </button>
-  );
+  
 
   const githubIcon = <FontAwesomeIcon icon={faGithub} />;
   const planeIcon = <FontAwesomeIcon icon={faPaperPlane} />;
@@ -191,7 +52,7 @@ function App() {
         <img id="mobileLogo" src={bannerMobile} alt="robot lions"></img>
       </div>
 
-      <Accordion alwaysOpen>
+      <Accordion>
         <Accordion.Item eventKey="0">
           <Accordion.Header>
            
@@ -258,14 +119,8 @@ function App() {
         </Accordion.Header>
         <Accordion.Body>
               <div className="row photosRow contentRow justify-content-center">
-                <div className="photoPanel col-md-3">{fallsCard}</div>
-                <div className="photoPanel col-md-3">{waterDropCard}</div>
-                <div className="photoPanel col-md-3">{loopFallsCard}</div>
-                <div className="photoPanel col-md-3">{quarryStepsCard}</div>
-                <div className="photoPanel col-md-3">{parkwayFallsCard}</div>
-                <div className="photoPanel col-md-3">{splashBWCard}</div>
-                <div className="photoPanel col-md-3">{wineSplashCard}</div>
-                <div className="photoPanel col-md-3">{follyCard}</div>
+                
+                <PhotoGallery />
                 <a
                   style={{ textAlign: "center" }}
                   href="https://flickr.com/photos/183126740@N02/"
