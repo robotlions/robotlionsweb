@@ -8,7 +8,7 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faFlickr } from '@fortawesome/free-brands-svg-icons';
 
-import logoBarColor from '../src/images/banner1800x300.jpg';
+import logoBarColor from '../src/images/robotLionsBannerRight1800x160.png';
 import bannerMobile from '../src/images/bannerMobile.png';
 import dice1 from '../src/images/slice1c2.jpg';
 import dice2 from '../src/images/slice2c2.jpg';
@@ -91,7 +91,7 @@ function App() {
     <div className="container g-4">
       
       <div className="row logoRow">
-        <img id="standardLogo" src={logoBarColor} alt="robot lions"></img>
+        <img style={{marginTop: 10}} id="standardLogo" src={logoBarColor} alt="robot lions"></img>
         <img id="mobileLogo" src={bannerMobile} alt="robot lions"></img></div>
       
       

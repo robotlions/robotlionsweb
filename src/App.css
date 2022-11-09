@@ -101,9 +101,8 @@ h5{
 }
 
 .logoRow{
+  padding-top: 1vh;
   background-color: white;
-  padding-top: 3vh;
-  padding-bottom: 1vh;
 }
 
 .mobileImage{
@@ -163,7 +162,7 @@ src: local('GothamLight'), url('../src/fonts/GothamPro-Light.woff') format('woff
 @media (min-width: 500px){
   .logoRow{
     padding-top: 0;
-    padding-bottom: 10vh;
+    padding-bottom: 2vh;
   }
 }
 
