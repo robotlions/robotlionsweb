@@ -142,11 +142,11 @@ export const storyDiceCard =
 <div className="card">
     <div className="row g-0">
         <div className="col-lg-4">
-          <a href="https://robotlions.github.io/storydice/">
+          <a href="https://dnd35charactergenerator.web.app/">
                 <img className="img-fluid" src={diceLogo} alt="game indicator"/></a></div>
                 <div className="card-body col-md-8 d-flex flex-column align-self-center">
-                  <h5 className="card-title">Story Dice</h5>
-                  <p  className="card-text">Web-based app written in React to randomly generate story prompts for fiction writers.</p>
+                  <h5 className="card-title">Dungeons and Dragons 3.5 Character Generator</h5>
+                  <p  className="card-text">Create a character for old-school D&D and export to pdf. Written in React.js and mobile responsive. Features optional rad fantasy-themed font.</p>
                 </div>
                 
                 </div>
