@@ -8,6 +8,8 @@ import parkwayFalls from "../images/parkwayFalls.jpg";
 import splashBW from "../images/splashBW.jpg";
 import wineSplash from "../images/wineSplash.jpg";
 import folly from "../images/folly.jpg";
+import daylily from "../images/daylily800.jpg";
+import watchMovement from "../images/watchMovement.jpg";
 
 
 const photoObjects ={
@@ -52,6 +54,16 @@ const photoObjects ={
       alt: "ocean and stars at night",
       caption: "Long exposure at night."
     },
+    daylilyCard:{
+      src: daylily,
+      alt: "yellow daylily with black background",
+      caption: "Light-painted daylily."
+    },
+    watchMovementCard:{
+      src: watchMovement,
+      alt: "internal gears of a mechanical watch",
+      caption: "Inside the movement of a mechanical watch."
+    }
 };
 
 
