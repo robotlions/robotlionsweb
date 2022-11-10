@@ -60,10 +60,10 @@ h5 {
   margin-bottom: 100px;
 }
 
-.contentRow {
-  padding-top: 20px;
+/* .contentRow {
+  padding-top: 10px;
   min-height: 350px;
-}
+} */
 
 .fullImage {
   max-width: 100%;
