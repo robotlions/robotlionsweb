@@ -1,28 +1,22 @@
-
-
-
 a {
   text-decoration: none;
   color: rgb(223, 227, 228);
 }
 
-a:link{
+a:link {
   color: rgb(223, 227, 228);
 }
 
-a:visited{
+a:visited {
   color: rgb(223, 227, 228);
 }
 
-
-
-.accordion-button{
+.accordion-button {
   padding: 0 !important;
   padding-right: 1.25rem !important;
   box-shadow: none !important;
   background-color: white !important;
 }
-
 
 button {
   background-color: white;
@@ -30,15 +24,14 @@ button {
   padding: 0;
   height: 100%;
   width: 100%;
-
 }
 
 p {
-  font-family: 'GothamLight';
+  font-family: "GothamLight";
 }
 
-h5{
-  font-family: 'Gotham';
+h5 {
+  font-family: "Gotham";
   font-size: large;
 }
 
@@ -46,100 +39,102 @@ h5{
   text-align: center;
 }
 
-.brandRow{
+.brandRow {
   background-color: white;
   height: 80px;
   padding-right: 75px;
   padding-top: 20px;
 }
 
-.card{
+.card {
   position: inherit !important;
   border: 1px solid black !important;
-  /* animation: fadeIn 2s; */
+  animation: fadeIn 2s;
 }
 
-
-.card-text{
+.card-text {
   color: black;
 }
 
-
-.container{
+.container {
   margin-bottom: 100px;
 }
 
-.contentRow{
+.contentRow {
   padding-top: 20px;
   min-height: 350px;
 }
 
-.fullImage{
-  max-width:100%;
+.fullImage {
+  max-width: 100%;
 }
-.imageRow{
+.imageRow {
   margin-top: 20px;
 }
 
-.image{
-  max-width:100%;
+.image {
+  max-width: 100%;
 }
 
-.linkLogos{
+.linkLogos {
   font-size: 40px;
   color: rgb(223, 227, 228);
 }
 
-#gitLogo:hover{
+#gitLogo:hover {
   color: black;
 }
 
-#mailLogo:hover{
+#mailLogo:hover {
   color: black;
 }
 
-#twitterLogo:hover{
-  color:black;
+#twitterLogo:hover {
+  color: black;
 }
 
-.logoRow{
+.logoRow {
   padding-top: 5vh;
   background-color: white;
   padding-bottom: 2vh;
 }
 
-.mobileImage{
-  width:100%;
+.mobileImage {
+  width: 100%;
 }
 
-.photoPanel{
+.photoPanel {
   margin-bottom: 1rem;
 }
 
-.photoImg{
+.photoImg {
   width: 100%;
   animation: fadeIn 2s;
 }
 
-.photoText{
+.photoText {
   width: 100%;
   animation: fadeIn 2s;
 }
 
-.photosRow{
+.photosRow {
   margin-bottom: 50px;
   min-height: 500px;
 }
 
-.textField{
+.textField {
   text-align: center;
   margin-top: 10px;
   padding-top: 10px;
 }
 
-@keyframes fadeIn{
-  from {opacity: 0;}
-  to {opacity: 1};
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* @keyframes slideIn {
@@ -148,42 +143,60 @@ h5{
 } */
 
 @font-face {
-  font-family: 'Gotham';
-  src: local('Gotham'), url('../src/fonts/GothamPro-Black.woff') format('woff');
+  font-family: "Gotham";
+  src: local("Gotham"), url("../src/fonts/GothamPro-Black.woff") format("woff");
 }
 @font-face {
-font-family: 'GothamLight';
-src: local('GothamLight'), url('../src/fonts/GothamPro-Light.woff') format('woff');
+  font-family: "GothamLight";
+  src: local("GothamLight"),
+    url("../src/fonts/GothamPro-Light.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Raleway-Black';
-  src: local('Raleway-Black'), url('../src/fonts/Raleway-Black.ttf') format('woff');
-  }
+  font-family: "Raleway-Black";
+  src: local("Raleway-Black"),
+    url("../src/fonts/Raleway-Black.ttf") format("woff");
+}
 
-  @font-face {
-    font-family: 'Raleway-Medium';
-    src: local('Raleway-Medium'), url('../src/fonts/Raleway-Medium.ttf') format('woff');
-    }
+@font-face {
+  font-family: "Raleway-Medium";
+  src: local("Raleway-Medium"),
+    url("../src/fonts/Raleway-Medium.ttf") format("woff");
+}
 
-@media (min-width: 500px){
-  .logoRow{
+@media (min-width: 500px) {
+  .logoRow {
     padding-top: 0;
     padding-bottom: 2vh;
   }
-
 }
 
-@media (max-width: 760px){
-  .photoText{min-height: 330px;padding-top:175px;}
-  .brandRow{padding-right: 40px;}
-  #standardLogo{display: none;}
-  .fullImage{display: none;}
-  .accordion-button::after{display: none;}
-  .accordion-button{padding-right: 0 !important};
-  
+@media (max-width: 760px) {
+  .photoText {
+    min-height: 330px;
+    padding-top: 175px;
+  }
+  .brandRow {
+    padding-right: 40px;
+  }
+  #standardLogo {
+    display: none;
+  }
+  .fullImage {
+    display: none;
+  }
+  .accordion-button::after {
+    display: none;
+  }
+  .accordion-button {
+    padding-right: 0 !important;
+  }
 }
-@media (min-width: 761px){
-  #mobileLogo{display: none;}
-  .mobileImage{display: none;}
+@media (min-width: 761px) {
+  #mobileLogo {
+    display: none;
+  }
+  .mobileImage {
+    display: none;
+  }
 }
