@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+// import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faFlickr } from "@fortawesome/free-brands-svg-icons";
 
 import logoBarColor from "../src/images/robotLionsBannerRight1800x160.png";
@@ -21,6 +21,7 @@ import mobileSlice4 from "../src/images/mobileSlice4.png";
 
 
 import { PhotoGallery } from "./Components/PhotoCards";
+import { ScscApp, scscAppCard } from "./Components/AppCards";
 
 import {
   atomicPressCard,
@@ -28,16 +29,17 @@ import {
   atomicPressDataCards,
 } from "./Components/Cards";
 
+
 function App() {
 
   
   const [atomicDataCardsVisible, setAtomicDataCardsVisible] = useState(false);
-
+const [scscDataCardsVisible, setScscDataCardsVisible] = useState(false);
   
 
   const githubIcon = <FontAwesomeIcon icon={faGithub} />;
   const planeIcon = <FontAwesomeIcon icon={faPaperPlane} />;
-  const twitterIcon = <FontAwesomeIcon icon={faTwitter} />;
+  // const twitterIcon = <FontAwesomeIcon icon={faTwitter} />;
   const flickrIcon = <FontAwesomeIcon icon={faFlickr} />;
 
   return (
@@ -78,6 +80,19 @@ function App() {
                 </button>
               </div>
             </div>
+            <div className="row contentRow justify-content-center">
+              <div className="textField col-md-8">
+                <button
+                  onClick={() =>
+                    setScscDataCardsVisible(!scscDataCardsVisible)
+                  }
+                >
+                  {!scscDataCardsVisible
+                    ? scscAppCard
+                    : <ScscApp />}
+                </button>
+              </div>
+            </div>
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="1">
@@ -113,7 +128,7 @@ function App() {
             <img
               className="mobileImage"
               src={mobileSlice3}
-              alt="photo button mobile"
+              alt="photography button mobile"
             ></img>
          
         </Accordion.Header>
