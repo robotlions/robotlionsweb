@@ -34,10 +34,10 @@ function App() {
   const flickrIcon = <FontAwesomeIcon icon={faFlickr} />;
 
   return (
-    <div className="container">
+    <div className="container-fluid px-lg-5">
       <div className="row logoRow">
         <img
-          style={{ marginTop: 10 }}
+          
           id="standardLogo"
           src={logoBarColor}
           alt="robot lions"
@@ -45,7 +45,7 @@ function App() {
         <img id="mobileLogo" src={bannerMobile} alt="robot lions"></img>
       </div>
 
-      <Accordion>
+      <Accordion alwaysOpen>
         <Accordion.Item eventKey="0">
           <Accordion.Header>
             <img className="fullImage" src={dice1} alt="apps button"></img>
@@ -56,6 +56,7 @@ function App() {
             ></img>
           </Accordion.Header>
           <Accordion.Body>
+
             <AppDisplay
               cardDataObject={scscDataObject}
               mainCard={scscMainCard}
@@ -78,7 +79,13 @@ function App() {
           </Accordion.Header>
           <Accordion.Body>
             <div className="row contentRow justify-content-center">
-              <div className="textField col-md-8">{storyDiceCard}</div>
+              
+              <div className="textField col-md-6">
+                <a className="siteLinkCard" href="https://dnd35charactergenerator.web.app/">
+                
+                {storyDiceCard}
+                </a></div>
+             
             </div>
           </Accordion.Body>
         </Accordion.Item>

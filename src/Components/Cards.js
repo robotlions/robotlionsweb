@@ -25,12 +25,13 @@ export const rpgCard = (
 );
 
 export const storyDiceCard = (
+  
+
   <div className="card">
     <div className="row g-0">
       <div className="col-lg-4">
-        <a href="https://dnd35charactergenerator.web.app/">
           <img className="img-fluid" src={diceLogo} alt="game indicator" />
-        </a>
+        
       </div>
       <div className="card-body col-md-8 d-flex flex-column align-self-center">
         <h5 className="card-title">

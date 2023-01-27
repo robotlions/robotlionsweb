@@ -10,6 +10,8 @@ import wineSplash from "../images/wineSplash.jpg";
 import folly from "../images/folly.jpg";
 import daylily from "../images/daylily800.jpg";
 import watchMovement from "../images/watchMovement.jpg";
+import fountain from "../images/fountain.jpg"
+import ironSpiral from "../images/ironSpiral.jpg"
 
 const photoObjects = {
   fallsCard: {
@@ -62,6 +64,16 @@ const photoObjects = {
     src: watchMovement,
     alt: "internal gears of a mechanical watch",
     caption: "Inside the movement of a mechanical watch.",
+  },
+  fountainCard: {
+    src: fountain,
+    alt: "fountain water in motion",
+    caption: "Water frozen in motion.",
+  },
+  ironSpiralCard: {
+    src: ironSpiral,
+    alt: "spiraled wrought iron",
+    caption: "Goofing around with a new lens with a really wide aperture.",
   },
 };
 

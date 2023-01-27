@@ -175,7 +175,7 @@ export const AppDisplay = (props) => {
 
   return (
     <div className="row contentRow justify-content-center">
-      <div className="textField col-md-8">
+      <div className="textField col-md-6">
         <button onClick={() => setInfoCardsVisible(!infoCardsVisible)}>
           {!infoCardsVisible ? props.mainCard : infoCardDisplay}
         </button>

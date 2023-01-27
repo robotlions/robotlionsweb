@@ -56,8 +56,8 @@ h5 {
   color: black;
 }
 
-.container {
-  margin-bottom: 100px;
+.container-fluid {
+  margin-bottom: 200px;
 }
 
 /* .contentRow {
@@ -67,6 +67,7 @@ h5 {
 
 .fullImage {
   max-width: 100%;
+  margin-bottom:30px;
 }
 .imageRow {
   margin-top: 20px;
@@ -91,6 +92,12 @@ h5 {
 
 #twitterLogo:hover {
   color: black;
+}
+
+#standardLogo{
+  max-width: 50%;
+  margin-top: 20px;
+  margin-bottom:50px;
 }
 
 .logoRow {
@@ -120,6 +127,18 @@ h5 {
 .photosRow {
   margin-bottom: 50px;
   min-height: 500px;
+}
+
+.siteLinkCard{
+  text-decoration: none;
+}
+
+.siteLinkCard:link {
+  color: black;
+}
+
+.siteLinkCard:visited {
+  color:black;
 }
 
 .textField {
@@ -199,4 +218,6 @@ h5 {
   .mobileImage {
     display: none;
   }
+
+  
 }
