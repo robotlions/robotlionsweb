@@ -35,6 +35,13 @@ h5 {
   font-size: large;
 }
 
+.accordion-button::after {
+  display: none;
+}
+.accordion-button {
+  padding-right: 0 !important;
+}
+
 .App {
   text-align: center;
 }
@@ -206,12 +213,7 @@ h5 {
   .fullImage {
     display: none;
   }
-  .accordion-button::after {
-    display: none;
-  }
-  .accordion-button {
-    padding-right: 0 !important;
-  }
+  
 }
 @media (min-width: 761px) {
   #mobileLogo {
