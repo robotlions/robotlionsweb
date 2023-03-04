@@ -53,17 +53,24 @@ export const scscMainCard = (
           With original design from ScanSource's Creative and Digital Team.
           <br />
           <a
+            target="_blank"
+            rel="noreferrer"
             style={{ color: "#99CBA6" }}
             href="https://play.google.com/store/apps/details?id=com.scansource.discoveropportunity&hl=en_US&gl=US"
           >
-            <img alt="play store" style={{maxWidth:"40%"}}src={googlePlayBadge} />
+            <img
+              alt="play store"
+              style={{ maxWidth: "40%" }}
+              src={googlePlayBadge}
+            />
           </a>{" "}
-         
           <a
+            target="_blank"
+            rel="noreferrer"
             style={{ color: "#99CBA6" }}
             href="https://apps.apple.com/us/app/discover-opportunity/id1618794221"
           >
-           <img alt="app store" style={{width:"33%"}} src={appStoreBadge} />
+            <img alt="app store" style={{ width: "33%" }} src={appStoreBadge} />
           </a>
         </p>
       </div>
@@ -116,10 +123,16 @@ export const atomicPressMainCard = (
           Inspired by 1950s atomic design.
           <br />
           <a
+            target="_blank"
+            rel="noreferrer"
             style={{ color: "#99CBA6" }}
             href="https://play.google.com/store/apps/details?id=com.robotlions.atomicpress"
           >
-            <img alt="play store" style={{maxWidth:"40%"}}src={googlePlayBadge} />
+            <img
+              alt="play store"
+              style={{ maxWidth: "40%" }}
+              src={googlePlayBadge}
+            />
           </a>{" "}
           {/* and the{" "}
           <a

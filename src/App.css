@@ -119,6 +119,19 @@ h5 {
   opacity:.7;
 }
 
+.navLogo{
+max-width: 35%;
+}
+
+@media (max-width:990px){
+  .navLogo{
+    max-width:90%;
+  }
+  .navbarBrandBar{
+    text-align: center;
+  }
+}
+
 .photoPanel {
   margin-bottom: 1rem;
 }

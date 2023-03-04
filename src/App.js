@@ -1,4 +1,5 @@
 import { Accordion } from "react-bootstrap";
+
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,8 +7,8 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { faFlickr } from "@fortawesome/free-brands-svg-icons";
 
-import logoBarColor from "../src/images/robotLionsBannerRight1800x160.png";
-import bannerMobile from "../src/images/robotLionsMobileBanner.png";
+// import logoBarColor from "../src/images/robotLionsBannerRight1800x160.png";
+// import bannerMobile from "../src/images/robotLionsMobileBanner.png";
 import dice1 from "../src/images/slice1c2.jpg";
 import dice2 from "../src/images/slice2c2.jpg";
 import dice3 from "../src/images/slice3c2.jpg";
@@ -27,6 +28,7 @@ import {
 } from "./Components/AppCards";
 
 import { storyDiceCard } from "./Components/Cards";
+import { topNav } from "./Components/Nav";
 
 function App() {
   const githubIcon = <FontAwesomeIcon icon={faGithub} />;
@@ -35,15 +37,7 @@ function App() {
 
   return (
     <div className="container-fluid px-lg-5">
-      <div className="row logoRow">
-        <img
-          
-          id="standardLogo"
-          src={logoBarColor}
-          alt="robot lions"
-        ></img>
-        <img id="mobileLogo" src={bannerMobile} alt="robot lions"></img>
-      </div>
+      {topNav}
 
       <Accordion alwaysOpen>
         <Accordion.Item eventKey="0">
@@ -56,7 +50,6 @@ function App() {
             ></img>
           </Accordion.Header>
           <Accordion.Body>
-
             <AppDisplay
               cardDataObject={scscDataObject}
               mainCard={scscMainCard}
@@ -79,13 +72,16 @@ function App() {
           </Accordion.Header>
           <Accordion.Body>
             <div className="row contentRow justify-content-center">
-              
               <div className="textField col-md-6">
-                <a className="siteLinkCard" href="https://dnd35charactergenerator.web.app/">
-                
-                {storyDiceCard}
-                </a></div>
-             
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  className="siteLinkCard"
+                  href="https://dnd35charactergenerator.web.app/"
+                >
+                  {storyDiceCard}
+                </a>
+              </div>
             </div>
           </Accordion.Body>
         </Accordion.Item>
