@@ -10,6 +10,8 @@ import frontScreen from "../images/blankPageScreen.png";
 import mainScreen from "../images/mainPageScreen.png";
 import editScreen from "../images/editRecipeScreen.png";
 import splashScreen from "../images/atomicSplash2.jpg";
+import googlePlayBadge from "../images/google-play-badge.png";
+import appStoreBadge from "../images/appStoreBadge.png";
 
 function createAppCard(alt, caption, src, title, index) {
   return (
@@ -50,19 +52,18 @@ export const scscMainCard = (
           <br />
           With original design from ScanSource's Creative and Digital Team.
           <br />
-          See the app on the{" "}
           <a
             style={{ color: "#99CBA6" }}
             href="https://play.google.com/store/apps/details?id=com.scansource.discoveropportunity&hl=en_US&gl=US"
           >
-            Google Play Store
+            <img alt="play store" style={{maxWidth:"40%"}}src={googlePlayBadge} />
           </a>{" "}
-          and the{" "}
+         
           <a
             style={{ color: "#99CBA6" }}
             href="https://apps.apple.com/us/app/discover-opportunity/id1618794221"
           >
-            App Store.
+           <img alt="app store" style={{width:"33%"}} src={appStoreBadge} />
           </a>
         </p>
       </div>
@@ -114,20 +115,19 @@ export const atomicPressMainCard = (
           <br />
           Inspired by 1950s atomic design.
           <br />
-          See the app on the{" "}
           <a
             style={{ color: "#99CBA6" }}
             href="https://play.google.com/store/apps/details?id=com.robotlions.atomicpress"
           >
-            Google Play Store
+            <img alt="play store" style={{maxWidth:"40%"}}src={googlePlayBadge} />
           </a>{" "}
-          and the{" "}
+          {/* and the{" "}
           <a
             style={{ color: "#99CBA6" }}
             href="https://apps.apple.com/app/id1611197453"
           >
             App Store.
-          </a>
+          </a> */}
         </p>
       </div>
     </div>
