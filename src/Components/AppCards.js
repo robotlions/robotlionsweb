@@ -133,14 +133,7 @@ export const atomicPressMainCard = (
               style={{ maxWidth: "40%" }}
               src={googlePlayBadge}
             />
-          </a>{" "}
-          {/* and the{" "}
-          <a
-            style={{ color: "#99CBA6" }}
-            href="https://apps.apple.com/app/id1611197453"
-          >
-            App Store.
-          </a> */}
+          </a>
         </p>
       </div>
     </div>

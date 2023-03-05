@@ -17,7 +17,7 @@ export const rpgCard = (
         <p className="card-text">
           Mobile role playing game.
           <br />
-          Coming early 2023.
+          Coming early 2024.
         </p>
       </div>
     </div>
