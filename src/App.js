@@ -17,6 +17,7 @@ import mobileSlice1 from "../src/images/mobileSlice1.png";
 import mobileSlice2 from "../src/images/mobileSlice2.png";
 import mobileSlice3 from "../src/images/mobileSlice3.png";
 import mobileSlice4 from "../src/images/mobileSlice4.png";
+import d20 from "../src/images/d20.png";
 
 import { PhotoGallery } from "./Components/PhotoCards";
 import {
