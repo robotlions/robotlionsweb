@@ -1,5 +1,6 @@
 import pressIcon from "../images/icon.png";
 import diceLogo from "../images/dicelogo.png";
+import poolRadSquare from "../images/poolRadSquare.jpg";
 
 
 
@@ -47,4 +48,24 @@ export const storyDiceCard = (
   </div>
 );
 
+export const goldBoxCard = (
+  
+
+  <div className="card">
+    <div className="row g-0">
+      <div className="col-lg-4">
+          <img className="img-fluid" src={poolRadSquare} alt="gold box games" />
+        
+      </div>
+      <div className="card-body col-md-8 d-flex flex-column align-self-center">
+        <h5 className="card-title">
+          Curse of the Secret Pools!
+        </h5>
+        <p className="card-text">
+          Edit and save game files from the Advanced Dungeons and Dragons "Gold Box" series of video games.
+        </p>
+      </div>
+    </div>
+  </div>
+);
 

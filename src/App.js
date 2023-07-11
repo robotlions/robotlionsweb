@@ -17,7 +17,6 @@ import mobileSlice1 from "../src/images/mobileSlice1.png";
 import mobileSlice2 from "../src/images/mobileSlice2.png";
 import mobileSlice3 from "../src/images/mobileSlice3.png";
 import mobileSlice4 from "../src/images/mobileSlice4.png";
-import d20 from "../src/images/d20.png";
 
 import { PhotoGallery } from "./Components/PhotoCards";
 import {
@@ -28,7 +27,7 @@ import {
   AppDisplay,
 } from "./Components/AppCards";
 
-import { storyDiceCard } from "./Components/Cards";
+import { storyDiceCard, goldBoxCard } from "./Components/Cards";
 import { topNav } from "./Components/Nav";
 
 function App() {
@@ -74,6 +73,15 @@ function App() {
           <Accordion.Body>
             <div className="row contentRow justify-content-center">
               <div className="textField col-md-6">
+              <a
+                  target="_blank"
+                  rel="noreferrer"
+                  className="siteLinkCard"
+                  href="https://goldbox.robotlions.com/"
+                >
+                  {goldBoxCard}
+                </a>
+                <br/>
                 <a
                   target="_blank"
                   rel="noreferrer"
@@ -82,6 +90,7 @@ function App() {
                 >
                   {storyDiceCard}
                 </a>
+                
               </div>
             </div>
           </Accordion.Body>
