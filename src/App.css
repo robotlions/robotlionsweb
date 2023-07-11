@@ -18,6 +18,13 @@ a:visited {
   background-color: white !important;
 }
 
+.accordion-button::after {
+  display: none;
+}
+.accordion-button {
+  padding-right: 0 !important;
+}
+
 button {
   background-color: white;
   border: none;
