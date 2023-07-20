@@ -24,6 +24,8 @@ import {
   scscDataObject,
   atomicPressMainCard,
   atomicPressDataObject,
+  modernCoffeeDataObject,
+  modernCoffeeMainCard,
   AppDisplay,
 } from "./Components/AppCards";
 
@@ -50,6 +52,11 @@ function App() {
             ></img>
           </Accordion.Header>
           <Accordion.Body>
+
+          <AppDisplay
+              cardDataObject={modernCoffeeDataObject}
+              mainCard={modernCoffeeMainCard}
+            />
             <AppDisplay
               cardDataObject={scscDataObject}
               mainCard={scscMainCard}

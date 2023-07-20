@@ -12,6 +12,7 @@ import editScreen from "../images/editRecipeScreen.png";
 import splashScreen from "../images/atomicSplash2.jpg";
 import googlePlayBadge from "../images/google-play-badge.png";
 import appStoreBadge from "../images/appStoreBadge.png";
+import modernCoffeeIcon from "../images/modernCoffeeLogo.png";
 
 function createAppCard(alt, caption, src, title, index) {
   return (
@@ -46,11 +47,10 @@ export const scscMainCard = (
         <img className="img-fluid" src={scscIcon} alt="app indicator" />
       </div>
       <div className="card-body d-flex flex-column col-md-8 align-self-center">
-        <h5 className="card-title">ScanSource Discover Opportunity App</h5>
-        <p className="card-text">
-          Custom-coded React Native app for ScanSource, Inc.
-          <br />
-          With original design from ScanSource's Creative and Digital Team.
+        <h5 className="card-title">Discover Opportunity App</h5>
+        <p className="card-text" style={{ fontSize: 15 }}>
+          Custom-coded React Native app for ScanSource, Inc, with original
+          design from ScanSource's Creative and Digital Team.
           <br />
           <a
             target="_blank"
@@ -72,6 +72,8 @@ export const scscMainCard = (
           >
             <img alt="app store" style={{ width: "33%" }} src={appStoreBadge} />
           </a>
+          <br />
+          <span style={{ fontSize: 10 }}>Tap to see more</span>
         </p>
       </div>
     </div>
@@ -116,9 +118,9 @@ export const atomicPressMainCard = (
       </div>
       <div className="card-body d-flex flex-column col-md-8 align-self-center">
         <h5 className="card-title">Atomic Press</h5>
-        <p className="card-text">
-          React Native app for randomly generating - then editing and saving -
-          recipes for the AeroPress coffee brewer.
+        <p className="card-text" style={{ fontSize: 15 }}>
+          React Native app for generating and editing recipes for the AeroPress
+          coffee brewer.
           <br />
           Inspired by 1950s atomic design.
           <br />
@@ -134,6 +136,8 @@ export const atomicPressMainCard = (
               src={googlePlayBadge}
             />
           </a>
+          <br />
+          <span style={{ fontSize: 10 }}>Tap to see more</span>
         </p>
       </div>
     </div>
@@ -167,6 +171,67 @@ export const atomicPressDataObject = {
       "Users randomly generate coffee recipes then save locally. No internet connection needed.",
   },
 };
+
+export const modernCoffeeDataObject = {
+  card1: {
+    src: splashScreen,
+    alt: "splash screen",
+    cardTitle: "Boss!",
+    caption: "Original graphics inspired by 1950s atomic design..",
+  },
+  card2: {
+    src: frontScreen,
+    alt: "app front screen",
+    cardTitle: "Keen!",
+    caption: "A clean, simple but functional UI.",
+  },
+  card3: {
+    src: mainScreen,
+    alt: "list of recipes",
+    cardTitle: "Nifty!",
+    caption: "Scroll through a list of saved, editable recipes.",
+  },
+  card4: {
+    src: editScreen,
+    alt: "editing screen",
+    cardTitle: "The Bee's Knees",
+    caption:
+      "Users randomly generate coffee recipes then save locally. No internet connection needed.",
+  },
+};
+
+export const modernCoffeeMainCard = (
+  <div className="card">
+    <div className="row g-0">
+      <div className="col-lg-4">
+        <img className="img-fluid" src={modernCoffeeIcon} alt="app indicator" />
+      </div>
+      <div className="card-body d-flex flex-column col-md-8 align-self-center">
+        <h5 className="card-title">Modern Coffee</h5>
+        <p className="card-text" style={{ fontSize: 15 }}>
+          Create, edit and store coffee recipes. Choose from default brew
+          methods or add your own. Recipes follow the user's account across
+          devices.
+          <br />
+          <a
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: "#99CBA6" }}
+            href="https://play.google.com/store/apps/details?id=com.robotlions.moderncoffee"
+          >
+            <img
+              alt="play store"
+              style={{ maxWidth: "40%" }}
+              src={googlePlayBadge}
+            />
+          </a>
+          <br />
+          <span style={{ fontSize: 10 }}>Tap to see more</span>
+        </p>
+      </div>
+    </div>
+  </div>
+);
 
 export const AppDisplay = (props) => {
   const [infoCardsVisible, setInfoCardsVisible] = useState(false);
