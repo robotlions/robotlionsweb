@@ -93,7 +93,7 @@ function App() {
                   target="_blank"
                   rel="noreferrer"
                   className="siteLinkCard"
-                  href="https://dnd35charactergenerator.web.app/"
+                  href="https://dnd35.robotlions.com/"
                 >
                   {storyDiceCard}
                 </a>
