@@ -13,6 +13,12 @@ import splashScreen from "../images/atomicSplash2.jpg";
 import googlePlayBadge from "../images/google-play-badge.png";
 import appStoreBadge from "../images/appStoreBadge.png";
 import modernCoffeeIcon from "../images/modernCoffeeLogo.png";
+import modernCoffeeTimer from "../images/modernCoffeeTimer.png";
+import modernCoffeeCustomize from "../images/modernCoffeeCustomize.png";
+import modernCoffeeLogin from "../images/modernCoffeeLogin.png";
+import modernCoffeeMethods from "../images/modernCoffeeMethods.png";
+
+
 
 function createAppCard(alt, caption, src, title, index) {
   return (
@@ -174,29 +180,29 @@ export const atomicPressDataObject = {
 
 export const modernCoffeeDataObject = {
   card1: {
-    src: splashScreen,
-    alt: "splash screen",
-    cardTitle: "Boss!",
-    caption: "Original graphics inspired by 1950s atomic design..",
+    src: modernCoffeeLogin,
+    alt: "login screen",
+    cardTitle: "Two ways to sign in",
+    caption: "Log in through email or Google.",
   },
   card2: {
-    src: frontScreen,
-    alt: "app front screen",
-    cardTitle: "Keen!",
-    caption: "A clean, simple but functional UI.",
+    src: modernCoffeeMethods,
+    alt: "brew method screen",
+    cardTitle: "Brew methods",
+    caption: "Choose from a list of default methods or add your own.",
   },
   card3: {
-    src: mainScreen,
-    alt: "list of recipes",
-    cardTitle: "Nifty!",
-    caption: "Scroll through a list of saved, editable recipes.",
+    src: modernCoffeeTimer,
+    alt: "custom timer",
+    cardTitle: "Custom timer",
+    caption: "Features a custom-coded timer with selectable alarm sounds.",
   },
   card4: {
-    src: editScreen,
-    alt: "editing screen",
-    cardTitle: "The Bee's Knees",
+    src: modernCoffeeCustomize,
+    alt: "customize screen",
+    cardTitle: "Custom content",
     caption:
-      "Users randomly generate coffee recipes then save locally. No internet connection needed.",
+      "Customize recipes, brew methods, user account... you name it!",
   },
 };
 
@@ -209,8 +215,8 @@ export const modernCoffeeMainCard = (
       <div className="card-body d-flex flex-column col-md-8 align-self-center">
         <h5 className="card-title">Modern Coffee</h5>
         <p className="card-text" style={{ fontSize: 15 }}>
-          Create, edit and store coffee recipes. Choose from default brew
-          methods or add your own. Recipes follow the user's account across
+          Create coffee recipes. Choose from default brew methods or add your
+          own. Store data in the cloud. Recipes follow the user's account across
           devices.
           <br />
           <a
