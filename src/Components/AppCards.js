@@ -78,7 +78,6 @@ export const scscMainCard = (
           >
             <img alt="app store" style={{ width: "33%" }} src={appStoreBadge} />
           </a>
-          <br />
           <span style={{ fontSize: 10 }}>Tap to see more</span>
         </p>
       </div>
@@ -142,7 +141,6 @@ export const atomicPressMainCard = (
               src={googlePlayBadge}
             />
           </a>
-          <br />
           <span style={{ fontSize: 10 }}>Tap to see more</span>
         </p>
       </div>
@@ -219,7 +217,9 @@ export const modernCoffeeMainCard = (
           own. Store data in the cloud. Recipes follow the user's account across
           devices.
           <br />
-          <a
+          <br/>
+          <h5>Coming Soon</h5>
+          {/* <a
             target="_blank"
             rel="noreferrer"
             style={{ color: "#99CBA6" }}
@@ -230,8 +230,7 @@ export const modernCoffeeMainCard = (
               style={{ maxWidth: "40%" }}
               src={googlePlayBadge}
             />
-          </a>
-          <br />
+          </a> */}
           <span style={{ fontSize: 10 }}>Tap to see more</span>
         </p>
       </div>
