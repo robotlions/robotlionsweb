@@ -4,7 +4,6 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-import { faFlickr } from "@fortawesome/free-brands-svg-icons";
 import { topNav } from "./Components/Nav";
 
 import atomicPressGraphic from "./images/atomicPressWebsiteGraphic1.png";
@@ -15,9 +14,9 @@ import curseGraphic from "./images/curseWebsiteGraphic3.png";
 function App() {
   const githubIcon = <FontAwesomeIcon icon={faGithub} />;
   const planeIcon = <FontAwesomeIcon icon={faPaperPlane} />;
-  const flickrIcon = <FontAwesomeIcon icon={faFlickr} />;
 
   return (
+    <div className="wrapper">
     <div className="container-fluid px-lg-5">
       {topNav}
 
@@ -135,17 +134,13 @@ function App() {
             {githubIcon}
           </a>
           {"\n"}
-          <a id="mailLogo" href="mailto:info@chadmusick.com">
+          <a id="mailLogo" href="mailto:info@robotlions.com">
             {planeIcon}
-          </a>
-          {"\n"}
-
-          <a id="flickrLogo" href="https://flickr.com/photos/183126740@N02/">
-            {flickrIcon}
           </a>
         </p>
       </div>
 
+    </div>
     </div>
   );
 }

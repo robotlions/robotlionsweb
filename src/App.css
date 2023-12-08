@@ -1,14 +1,16 @@
+
 a {
   text-decoration: none;
-  color: rgb(223, 227, 228);
+  color: rgb(239, 152, 58);
 }
 
 a:link {
-  color: rgb(223, 227, 228);
+  color: rgb(239, 152, 58);
+
 }
 
 a:visited {
-  color: rgb(223, 227, 228);
+  color: rgb(239, 152, 58);
 }
 
 .accordion-button {
@@ -24,6 +26,7 @@ a:visited {
 .accordion-button {
   padding-right: 0 !important;
 }
+
 
 button {
   background-color: white;
@@ -54,7 +57,7 @@ h5 {
 }
 
 .brandRow {
-  background-color: white;
+  background-color: transparent;
   height: 80px;
   padding-right: 75px;
   padding-top: 20px;
@@ -255,4 +258,13 @@ max-width: 35%;
 .card{
   box-shadow: 2px 2px 10px gray;
   border: none !important;
+}
+
+.wrapper{
+  background-image: url("./images/stripeFull3.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom:20px;
 }

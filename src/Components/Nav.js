@@ -1,4 +1,4 @@
-import Nav from 'react-bootstrap/Nav';
+// import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import bannerMobile from "../images/robotLionsMobileBanner.png";
 
@@ -8,7 +8,7 @@ import bannerMobile from "../images/robotLionsMobileBanner.png";
 
 
 export const topNav = (
-<Navbar bg="white" variant="light" expand="lg" style={{marginBottom:"40px"}}>
+<Navbar bg="transparent" variant="light" expand="lg" style={{marginBottom:"40px"}}>
       
         <Navbar.Brand className="navbarBrandBar"><img alt="robot lions" className="navLogo" src={bannerMobile} /></Navbar.Brand>
         {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
