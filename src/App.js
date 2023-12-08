@@ -33,7 +33,7 @@ function App() {
             </div>
             <div className="col-md-9">
               <div className="card-body">
-                <h5 className="card-title">Atomic Press</h5>
+                <h3 className="card-title">Atomic Press</h3>
                 <p className="card-text">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
@@ -60,7 +60,7 @@ function App() {
             </div>
             <div className="col-md-9">
               <div className="card-body">
-                <h5 className="card-title">Modern Coffee</h5>
+                <h3 className="card-title">Modern Coffee</h3>
                 <p className="card-text">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
@@ -93,7 +93,7 @@ function App() {
             </div>
             <div className="col-md-9">
               <div className="card-body">
-                <h5 className="card-title">Dungeons and Dragons 3.5 Character Generator</h5>
+                <h3 className="card-title">Dungeons and Dragons 3.5 Character Generator</h3>
                 <p className="card-text">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
@@ -120,7 +120,7 @@ function App() {
             </div>
             <div className="col-md-9">
               <div className="card-body">
-                <h5 className="card-title">Curse of the Secret Pools!</h5>
+                <h3 className="card-title">Curse of the Secret Pools!</h3>
                 <p className="card-text">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
