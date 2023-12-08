@@ -10,6 +10,7 @@ import atomicPressGraphic from "./images/atomicPressWebsiteGraphic1.png";
 import modernCoffeeGraphic from "./images/modernCoffeeWebsiteGraphic2.png";
 import dndGraphic from "./images/dnd35WebsiteGraphic2.png";
 import curseGraphic from "./images/curseWebsiteGraphic3.png";
+import googlePlayBadge from "./images/google-play-badge.png";
 
 function App() {
   const githubIcon = <FontAwesomeIcon icon={faGithub} />;
@@ -34,18 +35,19 @@ function App() {
             <div className="col-md-9">
               <div className="card-body">
                 <h3 className="card-title">Atomic Press</h3>
-                <p className="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p className="card-text">
-                  <small className="text-body-secondary">
-                    Last updated 3 mins ago
-                  </small>
-                </p>
+                <div className="card-text">
+                  <p>A nifty app for randomly generating, editing and saving recipes for the <a href="https://aeropress.com/">AeroPress Coffee Maker</a>.</p>
+                   <p>Featuring peachy keen, 1950s atomic graphics!</p>
+                  <strong>Platform:</strong> Android<br/>
+                  <strong>Language:</strong> React Native
+                </div>
+                
               </div>
-            </div>
+              <div className="cta-btn">
+                  <a href="https://play.google.com/store/apps/details?id=com.robotlions.atomicpress"><img alt="google play" className="googlePlayBadge" src={googlePlayBadge}/></a>
+               </div>
+             </div>
+            
           </div>
         </div>
 

@@ -52,6 +52,14 @@ h3 {
   margin-bottom: 10px;
 }
 
+.cta-btn{
+  text-align: center;
+}
+
+.googlePlayBadge{
+  max-width: 200px;
+}
+
 .linkLogos {
   font-size: 40px;
 }
