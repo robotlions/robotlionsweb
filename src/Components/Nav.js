@@ -1,7 +1,6 @@
 // import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logoBrown from "../images/logoBrown5.png";
-
+import gradientLogo from "../images/gradientLogo2.png";
 
 
 
@@ -11,7 +10,7 @@ import logoBrown from "../images/logoBrown5.png";
 export const topNav = (
 <Navbar bg="transparent" variant="light" expand="lg" style={{marginBottom:"40px"}}>
       
-        <Navbar.Brand className="navbarBrandBar"><img alt="robot lions" className="navLogo" src={logoBrown} /></Navbar.Brand>
+        <Navbar.Brand className="navbarBrandBar"><img alt="robot lions" className="navLogo" src={gradientLogo} /></Navbar.Brand>
         {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto align-items-center">

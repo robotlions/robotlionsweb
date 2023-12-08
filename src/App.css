@@ -1,103 +1,28 @@
+/* dark brown: #5a270f */
+/* orange: #ef983a */
 
 a {
   text-decoration: none;
-  color: rgb(239, 152, 58);
+  color: #ef983a;
 }
 
 a:link {
-  color: rgb(239, 152, 58);
+  color: #ef983a;
 
 }
 
 a:visited {
-  color: rgb(239, 152, 58);
-}
+  color: #ef983a;
 
-.accordion-button {
-  padding: 0 !important;
-  padding-right: 1.25rem !important;
-  box-shadow: none !important;
-  background-color: white !important;
-}
-
-.accordion-button::after {
-  display: none;
-}
-.accordion-button {
-  padding-right: 0 !important;
-}
-
-
-button {
-  background-color: white;
-  border: none;
-  padding: 0;
-  height: 100%;
-  width: 100%;
 }
 
 p {
-  font-family: "GothamLight";
+  font-family: "Raleway-Medium";
 }
 
 h5 {
-  font-family: "Gotham";
+  font-family: "Raleway-Black";
   font-size: large;
-}
-
-.accordion-button::after {
-  display: none;
-}
-.accordion-button {
-  padding-right: 0 !important;
-}
-
-.App {
-  text-align: center;
-}
-
-.brandRow {
-  background-color: transparent;
-  height: 80px;
-  padding-right: 75px;
-  padding-top: 20px;
-}
-
-.card {
-  position: inherit !important;
-  border: 1px solid black !important;
-  animation: fadeIn 2s;
-}
-
-.card-text {
-  color: black;
-}
-
-.container-fluid {
-  margin-bottom: 200px;
-}
-
-/* .contentRow {
-  padding-top: 10px;
-  min-height: 350px;
-} */
-
-.fullImage {
-  max-width: 100%;
-  margin-bottom:30px;
-  opacity:.7;
-}
-.imageRow {
-  margin-top: 20px;
-}
-
-.image {
-  max-width: 100%;
-}
-
-.linkLogos {
-  font-size: 40px;
-  color: rgb(223, 227, 228);
 }
 
 #gitLogo:hover {
@@ -108,14 +33,27 @@ h5 {
   color: black;
 }
 
-#twitterLogo:hover {
-  color: black;
+.brandRow {
+  background-color: transparent;
+  height: 80px;
+  padding-right: 75px;
+  padding-top: 20px;
 }
 
-#standardLogo{
-  max-width: 50%;
-  margin-top: 20px;
-  margin-bottom:50px;
+.card {
+  box-shadow: 2px 2px 10px #5a270f;
+  border: none !important;
+  animation: fadeIn 2s;
+}
+
+.categoryHeadline {
+  font-family: "Raleway-Black";
+  color: #5a270f;
+  margin-bottom: 10px;
+}
+
+.linkLogos {
+  font-size: 40px;
 }
 
 .logoRow {
@@ -124,65 +62,30 @@ h5 {
   padding-bottom: 2vh;
 }
 
-.mobileImage {
-  width: 100%;
-  opacity:.7;
+.navLogo {
+  max-width: 50%;
 }
 
-.navLogo{
-max-width: 90%;
+.spacer {
+  height: 30px;
 }
 
-.nav-link{
-  text-align: center;
-  min-width: 150px;
+.wrapper {
+  background-image: url("./images/stripeFull4.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
 }
 
-
-@media (max-width:990px){
-  .navLogo{
-    max-width:90%;
+@media (max-width: 990px) {
+  .navLogo {
+    max-width: 90%;
   }
-  .navbarBrandBar{
+  .navbarBrandBar {
     text-align: center;
   }
-}
-
-.photoPanel {
-  margin-bottom: 1rem;
-}
-
-.photoImg {
-  width: 100%;
-  animation: fadeIn 2s;
-}
-
-.photoText {
-  width: 100%;
-  animation: fadeIn 2s;
-}
-
-.photosRow {
-  margin-bottom: 50px;
-  min-height: 500px;
-}
-
-.siteLinkCard{
-  text-decoration: none;
-}
-
-.siteLinkCard:link {
-  color: black;
-}
-
-.siteLinkCard:visited {
-  color:black;
-}
-
-.textField {
-  text-align: center;
-  margin-top: 10px;
-  padding-top: 10px;
 }
 
 @keyframes fadeIn {
@@ -194,20 +97,6 @@ max-width: 90%;
   }
 }
 
-/* @keyframes slideIn {
-  from {transform: translateY(100px);}
-  to {transform: translateY(0px);}
-} */
-
-@font-face {
-  font-family: "Gotham";
-  src: local("Gotham"), url("../src/fonts/GothamPro-Black.woff") format("woff");
-}
-@font-face {
-  font-family: "GothamLight";
-  src: local("GothamLight"),
-    url("../src/fonts/GothamPro-Light.woff") format("woff");
-}
 
 @font-face {
   font-family: "Raleway-Black";
@@ -221,6 +110,7 @@ max-width: 90%;
     url("../src/fonts/Raleway-Medium.ttf") format("woff");
 }
 
+
 @media (min-width: 500px) {
   .logoRow {
     padding-top: 0;
@@ -229,42 +119,7 @@ max-width: 90%;
 }
 
 @media (max-width: 760px) {
-  .photoText {
-    min-height: 330px;
-    padding-top: 175px;
-  }
   .brandRow {
     padding-right: 40px;
   }
-  #standardLogo {
-    display: none;
-  }
-  .fullImage {
-    display: none;
-  }
-  
-}
-@media (min-width: 761px) {
-  #mobileLogo {
-    display: none;
-  }
-  .mobileImage {
-    display: none;
-  }
-
-  
-}
-
-.card{
-  box-shadow: 2px 2px 10px rgb(90, 39, 15);
-  border: none !important;
-}
-
-.wrapper{
-  background-image: url("./images/stripeFull4.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom:20px;
 }
