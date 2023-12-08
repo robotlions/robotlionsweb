@@ -130,7 +130,7 @@ h5 {
 }
 
 .navLogo{
-max-width: 35%;
+max-width: 90%;
 }
 
 .nav-link{
@@ -256,12 +256,12 @@ max-width: 35%;
 }
 
 .card{
-  box-shadow: 2px 2px 10px gray;
+  box-shadow: 2px 2px 10px rgb(90, 39, 15);
   border: none !important;
 }
 
 .wrapper{
-  background-image: url("./images/stripeFull3.png");
+  background-image: url("./images/stripeFull4.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
