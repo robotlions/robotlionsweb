@@ -25,6 +25,10 @@ h3 {
   font-size: large;
 }
 
+strong{
+  font-family: "Raleway-black";
+}
+
 #gitLogo:hover {
   color: black;
 }

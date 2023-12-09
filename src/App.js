@@ -20,7 +20,7 @@ function App() {
     <div className="wrapper">
       <div className="container">
         {topNav}
-        <div style={{textAlign:"center"}}>
+        <div style={{ textAlign: "center" }}>
           <h2 className="categoryHeadline">Mobile Apps</h2>
         </div>
         <div className="card mb-3" style={{ maxWidth: "100%" }}>
@@ -36,18 +36,27 @@ function App() {
               <div className="card-body">
                 <h3 className="card-title">Atomic Press</h3>
                 <div className="card-text">
-                  <p>A nifty app for randomly generating, editing and saving recipes for the <a href="https://aeropress.com/">AeroPress Coffee Maker</a>.</p>
-                   <p>Featuring peachy keen, 1950s atomic graphics!</p>
-                  <strong>Platform:</strong> Android<br/>
+                  <p>
+                    A nifty app for randomly generating, editing and saving
+                    recipes for the{" "}
+                    <a href="https://aeropress.com/">AeroPress Coffee Maker</a>.
+                  </p>
+                  <p>Featuring peachy keen, 1950s atomic graphics!</p>
+                  <strong>Platform:</strong> Android
+                  <br />
                   <strong>Language:</strong> React Native
                 </div>
-                
               </div>
               <div className="cta-btn">
-                  <a href="https://play.google.com/store/apps/details?id=com.robotlions.atomicpress"><img alt="google play" className="googlePlayBadge" src={googlePlayBadge}/></a>
-               </div>
-             </div>
-            
+                <a href="https://play.google.com/store/apps/details?id=com.robotlions.atomicpress">
+                  <img
+                    alt="google play"
+                    className="googlePlayBadge"
+                    src={googlePlayBadge}
+                  />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -63,24 +72,30 @@ function App() {
             <div className="col-md-9">
               <div className="card-body">
                 <h3 className="card-title">Modern Coffee</h3>
-                <p className="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p className="card-text">
-                  <small className="text-body-secondary">
-                    Last updated 3 mins ago
-                  </small>
-                </p>
+                <div className="card-text">
+                  <p>A robusto app for coffee nerds.</p>
+                  <p>
+                    Create and edit coffee recipes. Save them in the cloud and
+                    access them across Android devices.
+                  </p>
+                  <p>
+                    Deeply customizable. Create new brewing methods and
+                    variables or use pre-loaded options.
+                  </p>
+                  <strong>Platform:</strong> Android
+                  <br />
+                  <strong>Language:</strong> React Native
+                </div>
+                <div className="cta-btn">
+                  <strong>Coming Soon!</strong>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className="spacer"></div>
 
-        <div style={{textAlign:"center"}}>
-
+        <div style={{ textAlign: "center" }}>
           <h2 className="categoryHeadline">Web Apps</h2>
         </div>
 
@@ -95,17 +110,35 @@ function App() {
             </div>
             <div className="col-md-9">
               <div className="card-body">
-                <h3 className="card-title">Dungeons and Dragons 3.5 Character Generator</h3>
-                <p className="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p className="card-text">
-                  <small className="text-body-secondary">
-                    Last updated 3 mins ago
-                  </small>
-                </p>
+                <h3 className="card-title">
+                  Dungeons and Dragons 3.5 Character Generator
+                </h3>
+                <div className="card-text">
+                  <p>Accurate rules taken from 3.5 Player's Handbook.</p>
+                  <p>
+                    The best 3.5 character generator on the entire Internet.
+                  </p>
+                  <strong>Platform:</strong> Web
+                  <br />
+                  <strong>Language:</strong> React JS
+                </div>
+              </div>
+              <div className="cta-btn">
+                <a
+                  href="https://dnd35.robotlions.com"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Dungeons and Dragons 3.5 Character Generator
+                </a>
+                <br />
+                <a
+                  href="https://github.com/robotlions/dndchar/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  See the code on GitHub
+                </a>
               </div>
             </div>
           </div>
@@ -123,16 +156,39 @@ function App() {
             <div className="col-md-9">
               <div className="card-body">
                 <h3 className="card-title">Curse of the Secret Pools!</h3>
-                <p className="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p className="card-text">
-                  <small className="text-body-secondary">
-                    Last updated 3 mins ago
-                  </small>
-                </p>
+                <div className="card-text">
+                  <p>
+                    Online editor for the classic Dungeons and Dragons Gold Box
+                    video games.
+                  </p>
+                  <p>
+                    Upload a save and turn your character from a wimp to a
+                    warrior.
+                  </p>
+                  <p>
+                    Works for <em>Pools of Radiance</em>,{" "}
+                    <em>Curse of the Azure Bonds</em>,{" "}
+                    <em>Secret of the Silver Blades</em> and{" "}
+                    <em>Pools of Darkness</em>.
+                  </p>
+                </div>
+              </div>
+              <div className="cta-btn">
+                <a
+                  href="https://goldbox.robotlions.com"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Curse of the Secret Pools!
+                </a>
+                <br />
+                <a
+                  href="https://github.com/robotlions/goldboxeditor/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  See the code on GitHub
+                </a>
               </div>
             </div>
           </div>
