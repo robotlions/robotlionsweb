@@ -7,8 +7,8 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { topNav } from "./Components/Nav";
 
 import atomicPressGraphic from "./images/atomicPressWebsiteGraphic1.png";
-import modernCoffeeGraphic from "./images/modernCoffeeWebsiteGraphic2.png";
-import dndGraphic from "./images/dnd35WebsiteGraphic2.png";
+import modernCoffeeGraphic from "./images/modernCoffeeWebsiteGraphic.png";
+import dndGraphic from "./images/dnd35WebsiteGraphic3.png";
 import curseGraphic from "./images/curseWebsiteGraphic3.png";
 import googlePlayBadge from "./images/google-play-badge.png";
 
@@ -111,7 +111,7 @@ function App() {
             <div className="col-md-9">
               <div className="card-body">
                 <h3 className="card-title">
-                  Dungeons and Dragons 3.5 Character Generator
+                  Dungeons and Dragons 3.5 Character Creator
                 </h3>
                 <div className="card-text">
                   <p>Accurate rules taken from 3.5 Player's Handbook.</p>
@@ -129,7 +129,7 @@ function App() {
                   rel="noreferrer"
                   target="_blank"
                 >
-                  Dungeons and Dragons 3.5 Character Generator
+                  Dungeons and Dragons 3.5 Character Creator
                 </a>
                 <br />
                 <a
