@@ -114,9 +114,12 @@ function App() {
                   Dungeons and Dragons 3.5 Character Creator
                 </h3>
                 <div className="card-text">
-                  <p>Accurate rules taken from 3.5 Player's Handbook.</p>
+                  <p>The best damned Dungeons and Dragons 3.5 Edition character generator on the Internet.</p>
                   <p>
-                    The best 3.5 character generator on the entire Internet.
+                    Automatically generates printable character sheet.
+                  </p>
+                  <p>
+                    Mobile-responsive for some reason.
                   </p>
                   <strong>Platform:</strong> Web
                   <br />
@@ -162,8 +165,7 @@ function App() {
                     video games.
                   </p>
                   <p>
-                    Upload a save and turn your character from a wimp to a
-                    warrior.
+                    Easily <span style={{textDecoration:"line-through"}}>cheat</span> augment the hell out of your characters.
                   </p>
                   <p>
                     Works for <em>Pools of Radiance</em>,{" "}
@@ -171,6 +173,9 @@ function App() {
                     <em>Secret of the Silver Blades</em> and{" "}
                     <em>Pools of Darkness</em>.
                   </p>
+                  <strong>Platform:</strong> Web
+                  <br />
+                  <strong>Language:</strong> React JS
                 </div>
               </div>
               <div className="cta-btn">
