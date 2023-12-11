@@ -16,6 +16,10 @@ a:visited {
 
 }
 
+button{
+  width:100%
+}
+
 p {
   font-family: "Raleway-Medium";
 }
@@ -25,9 +29,19 @@ h3 {
   font-size: large;
 }
 
+h4{
+  font-family: "Raleway-Black";
+
+}
+
+
+
+
+
 strong{
   font-family: "Raleway-black";
 }
+
 
 #gitLogo:hover {
   color: black;
@@ -74,6 +88,12 @@ strong{
   padding-bottom: 2vh;
 }
 
+
+.navbar h4{
+  color: #5a270f;
+
+}
+
 .navLogo {
   max-width: 50%;
 }
@@ -96,8 +116,9 @@ strong{
     max-width: 90%;
   }
   .navbarBrandBar {
-    text-align: center;
+    text-align: center !important;
   }
+ 
 }
 
 @keyframes fadeIn {
