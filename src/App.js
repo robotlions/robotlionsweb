@@ -89,6 +89,7 @@ function App() {
                   <strong>Language:</strong> React Native
                 </div>
                 <div className="cta-btn">
+                  <br/>
                   <strong>Coming Soon!</strong>
                 </div>
               </div>
