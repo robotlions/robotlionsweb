@@ -225,7 +225,7 @@ function App() {
                 <div className="card-text">
                   <p>Robot Lions is a small developer of niche apps and games.</p>
                   <p>We pride ourselves on ethical development, which means:<br/>
-                  No pay-to-win. No in-app purchases. No advertising. No selling data. No being gross.</p>
+                  No pay-to-win. No in-app advertising. No selling data. No being gross.</p>
 
                  
                 </div>
