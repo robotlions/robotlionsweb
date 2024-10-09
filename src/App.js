@@ -12,6 +12,7 @@ import dndGraphic from "./images/dnd35WebsiteGraphic3.png";
 import curseGraphic from "./images/curseWebsiteGraphic3.png";
 import googlePlayBadge from "./images/google-play-badge.png";
 import arcadeLogo from "./images/arcadeLogo.png";
+import scaleLogo from "./images/robotLionsTitleCard.png";
 
 
 function App() {
@@ -168,7 +169,7 @@ function App() {
                     video games.
                   </p>
                   <p>
-                    Easily <span style={{textDecoration:"line-through"}}>cheat</span> augment the hell out of your characters.
+                    Easily <span style={{textDecoration:"line-through"}}>cheat</span> augment your characters.
                   </p>
                   <p>
                     Works for <em>Pools of Radiance</em>,{" "}
@@ -201,6 +202,56 @@ function App() {
             </div>
           </div>
         </div>
+
+        <div className="card mb-3" style={{ maxWidth: "100%" }}>
+          <div className="row g-0">
+            <div className="col-md-3">
+              <img
+                src={scaleLogo}
+                className="img-fluid rounded-start"
+                alt="video game nerds"
+              />
+            </div>
+            <div className="col-md-9">
+              <div className="card-body">
+                <h3 className="card-title">Scale-O-Matic 3000</h3>
+                <div className="card-text">
+                  <p>
+                  Free online chord finder.
+                  </p>
+                  <p>
+                  Find the chords in any musical key, scale or mode.
+                  </p>
+                  <p>
+                  Choose your root note and scale, and Scale-O-Matic 3000 will automatically generate the chords in that scale.
+                  </p>
+                  <strong>Platform:</strong> Web
+                  <br />
+                  <strong>Language:</strong> React JS
+                </div>
+              </div>
+              <div className="cta-btn">
+                <a
+                  href="https://scale-o-matic.robotlions.com"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Scale-O-Matic 3000
+                </a>
+                <br />
+                <a
+                  href="https://github.com/robotlions/scale-builder/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  See the code on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
 
         <div className="spacer"></div>
 
